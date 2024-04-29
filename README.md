@@ -9,6 +9,7 @@ Desarrollado en React con TypeScript
   - Redux: npm install react-redux
   - Redux - Toolkit: npm install @reduxjs/toolkit
   - Ejecuta json-server en otra terminal para simular una API: json-server --watch db.json
+    -----> https://www.npmjs.com/package/json-server
 
 
 ## Correr el proyecto
