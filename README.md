@@ -8,6 +8,7 @@ Desarrollado en React con TypeScript
   - React-Bootstrap: npm install react-bootstrap
   - Redux: npm install react-redux
   - Redux - Toolkit: npm install @reduxjs/toolkit
+  - Ejecuta json-server en otra terminal para simular una API: json-server --watch db.json
 
 
 ## Correr el proyecto
