@@ -45,6 +45,10 @@ export const SideBar = () => {
       <CSidebarHeader className="border-top">
         <CSidebarToggler />
       </CSidebarHeader>
+      <CSidebarHeader className="border-bottom"/> {/* Arreglar */}
+      
+        
+      
     </CSidebar>
   );
 };
