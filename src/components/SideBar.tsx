@@ -1,14 +1,11 @@
 import { cilCloudDownload, cilLayers, cilPuzzle, cilSpeedometer } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
-import { CBadge, CNavGroup, CNavItem, CNavTitle, CSidebar, CSidebarBrand, CSidebarHeader, CSidebarNav, CSidebarToggler } from '@coreui/react'
+import { CBadge, CNavGroup, CNavItem, CNavTitle, CSidebar, CSidebarHeader, CSidebarNav, CSidebarToggler } from '@coreui/react'
 
 
 export const SideBar = () => {
   return (
-    <CSidebar className="border-end" style={{ flex: '0 0 15%' }}>
-      <CSidebarHeader className="border-bottom">
-        <CSidebarBrand>CoreUI</CSidebarBrand>
-      </CSidebarHeader>
+    <CSidebar className="border-end">
       <CSidebarNav>
         <CNavTitle>Nav Title</CNavTitle>
         <CNavItem href="#">
