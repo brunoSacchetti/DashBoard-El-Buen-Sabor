@@ -7,18 +7,27 @@ export const SideBar = () => {
   return (
     <CSidebar className="border-end">
       <CSidebarNav>
-        <CNavTitle>Nav Title</CNavTitle>
+        <CNavTitle>Dashboard</CNavTitle>
         <CNavItem href="#">
-          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Nav item
+          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Inicio
         </CNavItem>
         <CNavItem href="#">
-          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> With badge{' '}
+          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Empresa{' '}
           <CBadge color="primary ms-auto">NEW</CBadge>
+        </CNavItem>
+        <CNavItem href="https://coreui.io">
+          <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Productos
+        </CNavItem>
+        <CNavItem href="https://coreui.io">
+          <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Promociones
+        </CNavItem>
+        <CNavItem href="https://coreui.io">
+          <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Usuarios
         </CNavItem>
         <CNavGroup
           toggler={
             <>
-              <CIcon customClassName="nav-icon" icon={cilPuzzle} /> Nav dropdown
+              <CIcon customClassName="nav-icon" icon={cilPuzzle} /> Categorias
             </>
           }
         >
@@ -26,29 +35,23 @@ export const SideBar = () => {
             <span className="nav-icon">
               <span className="nav-icon-bullet"></span>
             </span>{' '}
-            Nav dropdown item
+            Subcategoria 1
           </CNavItem>
           <CNavItem href="#">
             <span className="nav-icon">
               <span className="nav-icon-bullet"></span>
             </span>{' '}
-            Nav dropdown item
+            Subcategoria 2
           </CNavItem>
         </CNavGroup>
-        <CNavItem href="https://coreui.io">
-          <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Download CoreUI
-        </CNavItem>
         <CNavItem href="https://coreui.io/pro/">
-          <CIcon customClassName="nav-icon" icon={cilLayers} /> Try CoreUI PRO
+          <CIcon customClassName="nav-icon" icon={cilLayers} /> Insumos
         </CNavItem>
       </CSidebarNav>
       <CSidebarHeader className="border-top">
         <CSidebarToggler />
       </CSidebarHeader>
       <CSidebarHeader className="border-bottom"/> {/* Arreglar */}
-      
-        
-      
     </CSidebar>
   );
 };

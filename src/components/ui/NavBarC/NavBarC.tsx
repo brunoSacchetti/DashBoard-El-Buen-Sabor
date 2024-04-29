@@ -6,7 +6,7 @@ export const NavBarC = () => {
   <>
     <CNavbar expand="lg" className="bg-primary" >
       <CContainer fluid>
-        <CNavbarBrand href="#">Navbar</CNavbarBrand>
+        <CNavbarBrand href="#">El Buen Sabor</CNavbarBrand>
         <CCollapse className="navbar-collapse">
           <CNavbarNav as="nav">
             <CNavLink href="/" active>
