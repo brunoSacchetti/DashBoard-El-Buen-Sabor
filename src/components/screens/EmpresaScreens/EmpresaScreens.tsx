@@ -57,7 +57,7 @@ export const EmpresaScreens: React.FC = () => {
           ))}
         </section>
       </div>
-      {showModal && <FormModal handleCloseModal={handleCloseModal} />}
+      {showModal && <FormModal handleCloseModal={handleCloseModal} title={"Nueva Sucursal"} />}
     </>
   );
 };
