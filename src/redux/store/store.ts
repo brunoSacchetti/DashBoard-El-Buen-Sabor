@@ -1,12 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-/* import giftSlice from "../slices/gift" */
-// ...
+import modalSlice from "../slices/modalSlice"
 
 export const store = configureStore({
   reducer: {
-    /* gift: giftSlice */
+    modal: modalSlice, // No necesitas 'modalSlice: modalSlice'
   },
-})
+});
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>

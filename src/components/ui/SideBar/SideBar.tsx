@@ -1,25 +1,26 @@
 import { cilCloudDownload, cilLayers, cilPuzzle, cilSpeedometer } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 import { CBadge, CNavGroup, CNavItem, CNavTitle, CSidebar, CSidebarHeader, CSidebarNav, CSidebarToggler } from '@coreui/react'
-
+import styles from './SideBar.module.css'
 
 export const SideBar = () => {
   return (
-    <CSidebar className="border-end">
+    <CSidebar className={styles.SideBarBig}>
       <CSidebarNav>
         <CNavTitle>Dashboard</CNavTitle>
         <CNavItem href="#">
           <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Inicio
         </CNavItem>
-        <CNavItem href="#">
-          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Empresa{' '}
-          <CBadge color="primary ms-auto">NEW</CBadge>
+        <CNavItem href="/empresas">
+          <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Empresa
+          
         </CNavItem>
         <CNavItem href="https://coreui.io">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Productos
         </CNavItem>
         <CNavItem href="https://coreui.io">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Promociones
+          <CBadge color="primary ms-auto">NEW</CBadge>
         </CNavItem>
         <CNavItem href="https://coreui.io">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Usuarios

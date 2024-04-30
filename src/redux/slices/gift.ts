@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
-import { IGift } from "../../types/ArticuloInsumo"
+
 
 // Define a type for the slice state
 interface IInitialState {
