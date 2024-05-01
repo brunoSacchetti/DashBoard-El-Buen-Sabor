@@ -1,36 +1,37 @@
+import { CTable, CTableBody, CTableDataCell, CTableHead, CTableHeaderCell, CTableRow } from '@coreui/react';
 import Table from 'react-bootstrap/Table';
 
 function TableComponent() {
   return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </Table>
+    <CTable>
+  <CTableHead>
+    <CTableRow>
+      <CTableHeaderCell scope="col">#</CTableHeaderCell>
+      <CTableHeaderCell scope="col">Class</CTableHeaderCell>
+      <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+      <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+    </CTableRow>
+  </CTableHead>
+  <CTableBody>
+    <CTableRow>
+      <CTableHeaderCell scope="row">1</CTableHeaderCell>
+      <CTableDataCell>Mark</CTableDataCell>
+      <CTableDataCell>Otto</CTableDataCell>
+      <CTableDataCell>@mdo</CTableDataCell>
+    </CTableRow>
+    <CTableRow>
+      <CTableHeaderCell scope="row">2</CTableHeaderCell>
+      <CTableDataCell>Jacob</CTableDataCell>
+      <CTableDataCell>Thornton</CTableDataCell>
+      <CTableDataCell>@fat</CTableDataCell>
+    </CTableRow>
+    <CTableRow>
+      <CTableHeaderCell scope="row">3</CTableHeaderCell>
+      <CTableDataCell colSpan={2}>Larry the Bird</CTableDataCell>
+      <CTableDataCell>@twitter</CTableDataCell>
+    </CTableRow>
+  </CTableBody>
+</CTable>
   );
 }
 

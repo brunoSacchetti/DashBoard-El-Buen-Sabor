@@ -15,14 +15,14 @@ export const SideBar = () => {
           <CIcon customClassName="nav-icon" icon={cilSpeedometer} /> Empresa
           
         </CNavItem>
-        <CNavItem href="https://coreui.io">
+        <CNavItem href="/productos">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Productos
         </CNavItem>
-        <CNavItem href="https://coreui.io">
+        <CNavItem href="/promociones">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Promociones
           <CBadge color="primary ms-auto">NEW</CBadge>
         </CNavItem>
-        <CNavItem href="https://coreui.io">
+        <CNavItem href="/">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Usuarios
         </CNavItem>
         <CNavGroup
@@ -45,7 +45,7 @@ export const SideBar = () => {
             Subcategoria 2
           </CNavItem>
         </CNavGroup>
-        <CNavItem href="https://coreui.io/pro/">
+        <CNavItem href="/">
           <CIcon customClassName="nav-icon" icon={cilLayers} /> Insumos
         </CNavItem>
       </CSidebarNav>

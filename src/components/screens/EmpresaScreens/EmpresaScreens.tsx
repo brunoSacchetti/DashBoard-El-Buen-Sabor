@@ -13,6 +13,9 @@ const empresaService = new EmpresaService("http://localhost:3000/empresas");
 
 export const EmpresaScreens: React.FC = () => {
   const [empresas, setEmpresas] = useState<IEmpresa[]>([]);
+
+  
+
   const dispatch = useDispatch();
   const showModal = useSelector((state: RootState) => state.modal.showModal);
 
