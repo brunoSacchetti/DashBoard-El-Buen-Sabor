@@ -6,11 +6,14 @@ import { openModal } from "../../../redux/slices/modalSlice";
 import { SearchBar } from "../../ui/SearchBar/SearchBar";
 import "./PromocionesScreens.module.css";
 
+// Definición de la URL base de la API
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const PromocionesScreens = () => {
     const [promociones, setPromociones] = useState<IPromocion[]>([]);
 
   const promocionService = new PromocionService(
-    "http://localhost:3000/promociones"
+    API_URL + "/promociones"
   );
 
   const dispatch = useDispatch();
